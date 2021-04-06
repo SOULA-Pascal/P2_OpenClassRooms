@@ -1,0 +1,12 @@
+/* Feuille de Style pour Projet P2 PSa 2021_04  */
+
+html {
+    --blue: #0065FC;
+    --lightblue: #DEEBFF;
+    --grey: #F2F2F2;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
