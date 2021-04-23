@@ -57,6 +57,11 @@ table {
 /*   Début style page CSS PSa   */
 /* ============================ */
 
+/*  --------- Polices -------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+
 html {
     --blue: #0065FC;
     --lightblue: #DEEBFF;
@@ -147,7 +152,7 @@ a {
 /* Logo et Barre */
 /* ============= */
 
-#logo {
+#logo-reservia {
 	height: 100px;
 	display: flex;
     padding-left: 25px;
@@ -185,7 +190,7 @@ a {
 	border-top: solid 3px #0065FC;
   }
   
-  .logo img
+  .logo-reservia img
   {
 	width: 115px;
 	padding: 15px;
@@ -204,7 +209,7 @@ a {
   {
 	color: #0065FC;
 	font-weight: bold;
-	grid-column: 6/7;
+/*	grid-column: 6/7;*/
   }
   
 
@@ -367,7 +372,7 @@ button.filters__btn:hover {
 /* ======================== */
 
 #hebergements {
-	height: 600px;
+	height: 700px;
 	display: flex;
 	flex-direction: column;
 }
@@ -382,13 +387,7 @@ button.filters__btn:hover {
 	font-weight: bold;
 	padding: 15px 0 0 0 ;
 }
-/*
-#hebergements figcaption {
-	font-size: 1.2em;
-	font-weight: bold;
-	padding: 15px 0 0 15px ;
-}
-*/
+
 
 .hebergements-content {
 	display: flex;
@@ -423,6 +422,8 @@ button.filters__btn:hover {
 	border-radius: 15px 15px 0 0;
 }
 
+/* Hébergements les plus populaires */
+/* ================================ */
 
 .hebergements-populaires {
 	width: 25%;
@@ -467,7 +468,7 @@ button.filters__btn:hover {
 /* Activités */
 
 #activites {
-	height: 600px;
+	height: 700px;
 	display: flex;
 	flex-direction: column;
 }
