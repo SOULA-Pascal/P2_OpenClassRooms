@@ -1,5 +1,8 @@
 /* Feuille de Style CSS pour Projet P2 PSa 2021_04  */
+
+
 /* ================================================ */
+
 
 /* Reset CSS
    http://meyerweb.com/eric/tools/css/reset/
@@ -7,60 +10,161 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 
 /*   Fin du Reset CSS   */
 
 
-/*   Début style page CSS PSa   */
 /* ============================ */
+
+
+/*   Début style page CSS PSa   */
+
+
+/* ============================ */
+
 
 /*  --------- Polices -------- */
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
+/*   Caractéristiques Page Web  */
 
 html {
     --blue: #0065FC;
@@ -72,11 +176,14 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+
 /* Mise en forme du texte */
+
+
 /* ====================== */
 
 .text-bold {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .text-blue {
@@ -96,30 +203,33 @@ body {
 }
 
 a {
-	text-decoration: none;
-	color: #000;
+    text-decoration: none;
+    color: #000;
 }
-
 
 h1 {
     font-size: 16px;
-    font-weight:700;
+    font-weight: 700;
+}
+
+@-moz-document url-prefix() {
+    h1 {
+        font-weight: bold;
     }
-    
-    
+}
+
 h2 {
     font-size: 16px;
-    font-weight:700;
-    }
-    
+    font-weight: 700;
+}
+
 h3 {
     font-size: 14px;
-    }
-    
+}
+
 h4 {
     font-size: 12px;
-    }
-
+}
 
 .d-flex {
     display: flex;
@@ -173,85 +283,101 @@ h4 {
 }
 
 
-
 /* Logo et Barre de Navigation */
+
+
 /* =========================== */
 
 #logo-reservia {
-	height: 100px;
-	display: flex;
+    height: 100px;
+    display: flex;
     padding-left: 25px;
     margin-top: 40px;
-	flex-direction: column;
+    flex-direction: column;
 }
+
+.logo-reservia img {
+    width: 115px;
+    padding: 15px;
+}
+
 
 /* Barre de Navigation */
 
-.banner nav{
-	display: flex;
+.banner {
+    display: flex;
     flex-direction: row;
-    justify-content: space-between; /* justifie les éléments et garde le même espace entre eux */
+    justify-content: space-between;
+}
+
+.banner nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* justifie les éléments et garde le même espace entre eux */
     align-items: center;
-	margin-top: 0;
-  }
-  
-  .navigation-right {
+    margin-top: 0;
+}
+
+.navigation-right {
     display: flex;
     margin-right: 25px;
-  }
+    /* border : 3px solid transparent; */
+}
 
-  .a1{
-	grid-column: 4;
-  }
-  
-  .banner a{
-	text-align: center;
-	line-height: 125px;
+.a1 {
+    grid-column: 4;
+}
+
+.banner a {
+    text-align: center;
+    line-height: 125px;
     margin-right: 80px;
-  }
-  
-  .banner a:hover{
-	color: #0065FC;
-	border-top: solid 3px #0065FC;
-  }
-  
-  .logo-reservia img
-  {
-	width: 115px;
-	padding: 15px;
-  }
-  
-  
-  .banner a
-  {
-	color: black;
-	align-items: center;
-	text-decoration: none;
-  }
-  
-  
-  .banner .subscribe
-  {
-	color: #0065FC;
-	font-weight: bold;
-/*	grid-column: 6/7;*/
-  }
-  
+}
+
+.banner a:hover {
+    color: #0065FC;
+    border-top: solid 3px #0065FC;
+}
+
+
+/* on définit la classe active comme le hover  */
+
+.active {
+    color: #0065FC;
+    border-top: 5px solid #0065FC;
+    padding-top: 23px;
+}
+
+.banner a {
+    color: black;
+    align-items: center;
+    text-decoration: none;
+}
+
+.banner .subscribe {
+    color: #0065FC;
+    font-weight: bold;
+}
+
 
 /* Header */
+
+
 /* ====== */
 
 #header {
-	height: 100px;
-	display: flex;
-	flex-direction: column;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 .header h1 {
-	font-size: 1.5em;
-	font-weight: bold;
-	padding-bottom: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 15px;
 }
+
 
 /* Barre de recherche*/
 
@@ -317,12 +443,13 @@ input.searchbar__input {
     min-width: 54px;
 }
 
+
 /* Barre des filtres */
 
 .filter-right {
     display: flex;
     margin-right: 40px;
-  }
+}
 
 .filters__title {
     font-size: 1.2rem;
@@ -361,7 +488,6 @@ button.filters__btn {
     padding: 0 15px 0 0;
     font-size: 1.2rem;
     background: white;
-
     background: linear-gradient(to left, white 50%, var(--lightblue) 50%) right;
     background-size: 200%;
     transition: all 0.125s;
@@ -372,6 +498,7 @@ button.filters__btn:hover {
     border-color: var(--lightblue);
     transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
+
 
 /* Infos */
 
@@ -394,45 +521,46 @@ button.filters__btn:hover {
 
 
 /* Section Hébergements à Marseille et Populaires */
+
+
 /* ============================================== */
+
 
 /* Permet au contenu Hébergements et Populaires d'être alignés et flex */
 
 .flex__container {
     display: flex;
-    }
-
+}
 
 
 /* Hébergements à Marseille */
+
+
 /* ======================== */
 
 #hebergements {
-	height: 800px;
-	display: flex;
-	flex-direction: column;
+    height: 800px;
+    display: flex;
 }
 
 #hebergements figure {
-	border-radius: 20px;
-	margin: 20px;
+    border-radius: 20px;
+    margin: 20px;
 }
 
 #hebergements figcaption {
-	font-size: 1.2em;
-	font-weight: bold;
-	padding: 15px 0 0 0 ;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px 0 0 0;
 }
-
 
 .hebergements-content {
-	display: flex;
-	height: 100%;
+    display: flex;
+    height: 100%;
 }
 
 
-
-/*--les hebergements de Marseille */
+/*--les hébergements de Marseille */
 
 .container__marseille {
     flex: 67%;
@@ -441,289 +569,257 @@ button.filters__btn:hover {
     margin-right: 20px;
     background-color: #f2f2f2;
     border-radius: 20px;
-    }
+}
 
-    .container__marseille h2 {
+.container__marseille h2 {
     margin-left: 25px;
     padding-top: 20px;
-    
-    }
-           
-    .hotel__marseille{
+}
+
+.hotel__marseille {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    }
-    
-                 
-    .images__hotel {
-    flex:27%;
+}
+
+.images__hotel {
+    flex: 27%;
     background-color: white;
     box-shadow: 5px 3px 3px lightgrey;
-    margin:10px;
-    border-radius: 20px;         
-    }  
-    .images__hotel img {
-    width:100%;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.images__hotel img {
+    width: 100%;
     height: 150px;
     border-radius: 20px 20px 0 0;
-    padding:3px 0 3px 3px;
-    } 
-                    
-    .images__hotel h3 {
-    margin: 0px 0 10px 10px;                      
-    }  
-    
-    .images__hotel h4 {
+    padding: 3px 0 3px 3px;
+}
+
+.images__hotel h3 {
+    margin: 0px 0 10px 10px;
+}
+
+.images__hotel h4 {
     margin: 5px 0 10px 10px;
-    }
-    
+}
 
-
-    .afficherplus h3 {
+.afficherplus h3 {
     margin: 75px 0 0 25px;
     font-weight: bold;
-    }
-    
-    .afficherplus a:hover {
+}
+
+.afficherplus a:hover {
     color: #0065FC;
-    }
-
-
-
-
-
+}
 
 
 /* Hébergements les plus populaires */
+
+
 /* ================================ */
 
 .hebergements-populaires {
-	width: 25%;
+    width: 25%;
 }
 
 .hebergements-populaires figure {
     height: 180px;
-	box-shadow: 5px 5px 5px #f2f2f2
+    box-shadow: 5px 5px 5px #f2f2f2
 }
 
-.hebergements-populaires img{
-	width: 35%;
-	height: 150px;
-	object-fit: cover;
-	border-radius: 15px 15px 0 0;
-	float: left;
+.hebergements-populaires img {
+    width: 35%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    float: left;
     margin-right: 15px;
 }
 
-.text-populaire{
-	text-align: left;
-	padding-left: 1em;
+.text-populaire {
+    text-align: left;
+    padding-left: 1em;
 }
 
-
 #populaires {
-	height: 800px;
-	display: flex;
-	flex-direction: column;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
 }
 
 #populaires figure {
-	border-radius: 20px;
-	margin: 20px;
+    border-radius: 20px;
+    margin: 20px;
 }
 
 #populaires figcaption {
-	font-size: 1.2em;
-	font-weight: bold;
-	padding: 30px 0 0 0 ;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 30px 0 0 0;
 }
-
-
 
 
 /* Division de droite avec les plus populaires */
 
 .container_populaires {
-
     display: flex;
     flex-direction: column;
-    flex:28%;
-    margin-right:20px;
+    flex: 28%;
+    margin-right: 20px;
     height: 800px;
     border-radius: 20px;
     background-color: #f2f2f2;
-    
-    }
-    
-    
-    .images__align{
-    
+}
+
+.images__align {
     background-color: white;
     border-radius: 20px;
     height: 220px;
     margin: 10px;
     display: flex;
-    }
-    
-    
-    .images__popular img {
-    
+}
+
+.images__popular img {
     width: 40%;
     height: 180px;
     padding: 3px;
     border-radius: 20px 0 0 20px;
-    }
-    
-    
-    
-    .container_populaires a {
+}
+
+.container_populaires a {
     color: black;
     text-decoration: none;
-    }
-    
-    .popular__title{
-    margin-top:20px;
-    margin-left: 10px;;
+}
+
+.popular__title {
+    margin-top: 20px;
+    margin-left: 10px;
+    ;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    }    
-    
-    
-    .popular__title i { 
+}
+
+.popular__title i {
     margin-right: 10px;
     color: black;
-    }
-    
-    
-    .name__hotel h3 {
+}
+
+.name__hotel h3 {
     margin-top: 10px;
-    }
-
-    
-    
-
-
-
-
-
+}
 
 
 /* Activités */
 
 #activites {
-	height: 700px;
-	display: flex;
-	flex-direction: column;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
 }
 
 #activites figure {
-	border-radius: 20px;
-	margin: 20px;
+    border-radius: 20px;
+    margin: 20px;
 }
 
 #activites figcaption {
-	font-size: 1.2em;
-	font-weight: bold;
-	padding: 15px 0 0 15px ;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px 0 0 15px;
 }
 
-
 .activites-content {
-	display: flex;
-	height: 100%;
+    display: flex;
+    height: 100%;
 }
 
 .activites-solo {
-	width: 25%;
+    width: 25%;
 }
 
 .activites-solo figure {
-	height: 520px;
-	box-shadow: 5px 5px 5px #f2f2f2
+    height: 520px;
+    box-shadow: 5px 5px 5px #f2f2f2
 }
 
 .activites-solo img {
-	width: 100%;
-	height: 470px;
-	object-fit: cover;
-	border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
 }
 
 .activites-duo {
-	width: 25%;
+    width: 25%;
 }
 
 .activites-duo-top figure {
     height: 250px;
-	box-shadow: 5px 5px 5px #f2f2f2
+    box-shadow: 5px 5px 5px #f2f2f2
 }
 
-.activites-duo-top img{
-	width: 100%;
-	height: 200px;
-	object-fit: cover;
-	border-radius: 15px 15px 0 0;
+.activites-duo-top img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
 }
 
 .activites-duo-bottom figure {
     height: 250px;
-	box-shadow: 5px 5px 5px #f2f2f2
+    box-shadow: 5px 5px 5px #f2f2f2
 }
 
-.activites-duo-bottom img{
-	width: 100%;
-	height: 200px;
-	object-fit: cover;
-	border-radius: 15px 15px 0 0;
+.activites-duo-bottom img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
 }
 
 
 /* Footer */
 
 footer {
-	display: flex;
-	justify-content: space-around;
-	background: #F2F2F2;
-	padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    background: #F2F2F2;
+    padding: 30px;
 }
 
 footer h3 {
-	font-size: 1.5em;
-	font-weight: bold;
-	padding-bottom: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 15px;
 }
 
 footer ul li {
-	line-height: 1.7em;
+    line-height: 1.7em;
 }
 
 
 /* ============= */
+
+
 /* Partie Mobile */
+
+
 /* ============= */
 
-@media (min-width: 300px) and (max-width: 767px) /* SMARTPHONES */ { 
+@media (min-width: 300px) and (max-width: 767px)
+/* SMARTPHONES */
 
- /*   Ecrire dans ce bloc les propriétés CSS Mobile .monCss {...} */
-
+{
+    /*   Ecrire dans ce bloc les propriétés CSS Mobile .monCss {...} */
     #hebergements {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 0 1.25%;
     }
-
-
-
-
-
-    footer{
+    footer {
         flex-direction: column;
     }
-
 }
-
-
