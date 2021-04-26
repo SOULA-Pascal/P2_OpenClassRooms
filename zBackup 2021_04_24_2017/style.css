@@ -83,10 +83,6 @@ body {
     color: var(--blue);
 }
 
-.text-grey {
-    color: var(--grey);
-}
-
 .text-lightblue {
     color: var(--lightblue);
 }
@@ -99,27 +95,6 @@ a {
 	text-decoration: none;
 	color: #000;
 }
-
-
-h1 {
-    font-size: 16px;
-    font-weight:700;
-    }
-    
-    
-h2 {
-    font-size: 16px;
-    font-weight:700;
-    }
-    
-h3 {
-    font-size: 14px;
-    }
-    
-h4 {
-    font-size: 12px;
-    }
-
 
 .d-flex {
     display: flex;
@@ -173,9 +148,8 @@ h4 {
 }
 
 
-
-/* Logo et Barre de Navigation */
-/* =========================== */
+/* Logo et Barre */
+/* ============= */
 
 #logo-reservia {
 	height: 100px;
@@ -393,22 +367,11 @@ button.filters__btn:hover {
 }
 
 
-/* Section Hébergements à Marseille et Populaires */
-/* ============================================== */
-
-/* Permet au contenu Hébergements et Populaires d'être alignés et flex */
-
-.flex__container {
-    display: flex;
-    }
-
-
-
 /* Hébergements à Marseille */
 /* ======================== */
 
 #hebergements {
-	height: 800px;
+	height: 700px;
 	display: flex;
 	flex-direction: column;
 }
@@ -430,70 +393,33 @@ button.filters__btn:hover {
 	height: 100%;
 }
 
+.hebergements-duo {
+	width: 25%;
+}
 
+.hebergements-duo-top figure {
+    height: 290px;
+	box-shadow: 5px 5px 5px #f2f2f2
+}
 
-/*--les hebergements de Marseille */
+.hebergements-duo-top img{
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 15px 15px 0 0;
+}
 
-.container__marseille {
-    flex: 67%;
-    margin-left: 20px;
-    height: 700px;
-    margin-right: 20px;
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    }
+.hebergements-duo-bottom figure {
+    height: 290px;
+	box-shadow: 5px 5px 5px #f2f2f2
+}
 
-    .container__marseille h2 {
-    margin-left: 25px;
-    padding-top: 20px;
-    
-    }
-           
-    .hotel__marseille{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    }
-    
-                 
-    .images__hotel {
-    flex:27%;
-    background-color: white;
-    box-shadow: 5px 3px 3px lightgrey;
-    margin:10px;
-    border-radius: 20px;         
-    }  
-    .images__hotel img {
-    width:100%;
-    height: 150px;
-    border-radius: 20px 20px 0 0;
-    padding:3px 0 3px 3px;
-    } 
-                    
-    .images__hotel h3 {
-    margin: 0px 0 10px 10px;                      
-    }  
-    
-    .images__hotel h4 {
-    margin: 5px 0 10px 10px;
-    }
-    
-
-
-    .afficherplus h3 {
-    margin: 75px 0 0 25px;
-    font-weight: bold;
-    }
-    
-    .afficherplus a:hover {
-    color: #0065FC;
-    }
-
-
-
-
-
-
+.hebergements-duo-bottom img{
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 15px 15px 0 0;
+}
 
 /* Hébergements les plus populaires */
 /* ================================ */
@@ -516,100 +442,27 @@ button.filters__btn:hover {
     margin-right: 15px;
 }
 
+
 .text-populaire{
 	text-align: left;
 	padding-left: 1em;
 }
 
-
-#populaires {
-	height: 800px;
-	display: flex;
-	flex-direction: column;
-}
-
-#populaires figure {
-	border-radius: 20px;
-	margin: 20px;
-}
-
-#populaires figcaption {
-	font-size: 1.2em;
-	font-weight: bold;
-	padding: 30px 0 0 0 ;
-}
-
-
-
-
-/* Division de droite avec les plus populaires */
-
-.container_populaires {
-
-    display: flex;
-    flex-direction: column;
-    flex:28%;
-    margin-right:20px;
-    height: 800px;
-    border-radius: 20px;
-    background-color: #f2f2f2;
-    
-    }
-    
-    
-    .images__align{
-    
-    background-color: white;
-    border-radius: 20px;
-    height: 220px;
-    margin: 10px;
-    display: flex;
-    }
-    
-    
-    .images__popular img {
-    
-    width: 40%;
-    height: 180px;
-    padding: 3px;
-    border-radius: 20px 0 0 20px;
-    }
-    
-    
-    
-    .container_populaires a {
-    color: black;
+#hebergements .show-more {
     text-decoration: none;
-    }
-    
-    .popular__title{
-    margin-top:20px;
-    margin-left: 10px;;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    }    
-    
-    
-    .popular__title i { 
-    margin-right: 10px;
     color: black;
-    }
-    
-    
-    .name__hotel h3 {
-    margin-top: 10px;
-    }
+    font-weight: bold;
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-top: 30px;
+}
 
-    
-    
-
-
-
-
-
-
+/*
+.hebergements-trio figcaption{
+	text-align: left;
+	padding-left: 1.8em;
+}
+*/
 
 /* Activités */
 
