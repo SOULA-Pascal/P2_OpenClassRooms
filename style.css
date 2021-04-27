@@ -565,7 +565,7 @@ button.filters__btn:hover {
 .container__marseille {
     flex: 67%;
     margin-left: 20px;
-    height: 700px;
+    height: 800px;
     margin-right: 20px;
     background-color: #f2f2f2;
     border-radius: 20px;
@@ -680,11 +680,11 @@ button.filters__btn:hover {
     display: flex;
 }
 
-.images__popular img {
-    width: 40%;
-    height: 180px;
-    padding: 3px;
+.images__hotel_populaire img {
+    width: 50%;
+    height: 175px;
     border-radius: 20px 0 0 20px;
+    padding: 3px 0 3px 3px;
 }
 
 .container_populaires a {
@@ -821,5 +821,18 @@ footer ul li {
     }
     footer {
         flex-direction: column;
+    }
+}
+
+
+/* Tablettes */
+
+@media all and (min-width: 1368px) {
+    main,
+    header {
+        width: 80%;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
