@@ -453,7 +453,7 @@ input.searchbar__input {
 
 .filters__title {
     font-size: 1.2rem;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .filters__content {
@@ -651,6 +651,7 @@ button.filters__btn:hover {
 #populaires figure {
     border-radius: 20px;
     margin: 20px;
+    max-width: 240px;
 }
 
 #populaires figcaption {
@@ -681,7 +682,7 @@ button.filters__btn:hover {
 }
 
 .images__hotel_populaire img {
-    width: 50%;
+    width: 100%;
     height: 175px;
     border-radius: 20px 0 0 20px;
     padding: 3px 0 3px 3px;
@@ -692,7 +693,7 @@ button.filters__btn:hover {
     text-decoration: none;
 }
 
-.popular__title {
+.populaires__title {
     margin-top: 20px;
     margin-left: 10px;
     ;
@@ -701,7 +702,7 @@ button.filters__btn:hover {
     align-items: center;
 }
 
-.popular__title i {
+.populaires__title i {
     margin-right: 10px;
     color: black;
 }
@@ -813,21 +814,48 @@ footer ul li {
 
 {
     /*   Ecrire dans ce bloc les propriétés CSS Mobile .monCss {...} */
+    #populaires {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25%;
+        justify-content: center;
+    }
+    #populaires>.populaires_title {
+        flex-basis: 100%;
+    }
+    #populaires figure {
+        flex-basis: 49%;
+    }
     #hebergements {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 0 1.25%;
     }
+    #activities>div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #activities figure {
+        width: 100%;
+    }
+    #activities figure img {
+        height: 100%;
+    }
+    #activities figure>div {
+        height: 150px;
+    }
     footer {
         flex-direction: column;
+        justify-content: space-around;
     }
 }
 
 
 /* Tablettes */
 
-@media all and (min-width: 1368px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     main,
     header {
         width: 80%;
