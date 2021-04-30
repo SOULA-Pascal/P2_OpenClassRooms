@@ -767,7 +767,7 @@
             }
             .subscribe {
                 position: absolute;
-                top: 2em;
+                top: 1em;
                 right: 1.5em;
             }
             nav {
@@ -785,7 +785,6 @@
             }
             /* Populaires */
             #populaires {
-                flex-wrap: wrap;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -811,17 +810,22 @@
             }
             /* Hébergements */
             #hebergements {
-                flex-wrap: wrap;
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: flex-end;
+                gap: 0 1.25%;
+            }
+            .hotel__marseille {
+                /* display: grid; equivalent à display + flex-direction */
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                gap: 0 1.25%;
+                width: 100%;
             }
             /* Activités */
             #activites>div {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
+                justify-content: flex-end;
             }
             #activites figure {
                 width: 100%;
@@ -869,7 +873,6 @@
             /* Footer */
             footer {
                 display: flex;
-                flex-wrap: wrap;
                 flex-direction: column;
                 justify-content: space-around;
             }
