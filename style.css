@@ -211,7 +211,7 @@
         }
         
         .d-flex {
-            display: flex;
+            display: flex!important;
         }
         
         .d-flex--wrap {
@@ -838,7 +838,7 @@
                 height: 100%;
             }
             #activites figure>div {
-                height: 150px;
+                /* height: 150px;*/
             }
             .activites {
                 display: flex;
