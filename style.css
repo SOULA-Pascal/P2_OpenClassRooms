@@ -829,10 +829,11 @@
                 width: 100%;
             }
             /* Activités */
-            #activites>div {
+            #activites {
                 display: flex;
                 flex-direction: column;
                 height: auto;
+                justify-content: center;
                 /* justify-content: flex-end;*/
             }
             #activites figure {
@@ -841,22 +842,27 @@
             #activites figure img {
                 height: 100%;
             }
-            #activites figure>div {
+            #activites figure {
                 /*height: 150px;*/
                 height: auto;
             }
             .activites {
                 display: flex;
-                /**/
                 flex-direction: column;
                 align-items: center;
+                height: auto;
+                /**/
             }
             .activites h2 {
                 padding-left: 2em;
             }
+            .activites-content {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+            }
             .activites-solo {
                 display: flex;
-                /**/
                 flex-direction: column;
                 width: 100%;
                 height: 50%;
@@ -864,7 +870,6 @@
             }
             .activites-duo {
                 display: flex;
-                /**/
                 flex-direction: column;
                 width: 100%;
                 margin: 0px;
@@ -874,22 +879,6 @@
                 margin-top: 2em;
                 margin-bottom: 2em;
             }
-            /*
-            #activities figure img {
-                border-top-left-radius: 15px;
-                border-top-right-radius: 15px;
-                height: 140px;
-                /* height: auto;*/
-            /**
-                object-fit: cover;
-            }
-            */
-            /*#activities figure>figcaption {
-                padding: 16px 10px;
-                font-weight: bold;
-                font-size: 1.3rem;
-                min-height: 20px;
-            }*/
             /* Footer */
             footer {
                 display: flex;
