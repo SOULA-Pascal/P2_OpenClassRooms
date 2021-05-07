@@ -940,12 +940,16 @@
                 /**/
                 gap: 0 1.25%;
             }
+            .afficherplus h3 {
+                margin: 75px 0 50px 25px;
+                font-weight: bold;
+            }
+            /* Footer Tablette */
             footer {
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
+                flex-direction: row;
+                justify-content: space-around;
                 height: auto;
-                /**/
             }
             footer h3 {
                 font-size: 1.5em;
