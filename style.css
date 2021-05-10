@@ -198,7 +198,7 @@
         }
         
         h2 {
-            font-size: 16px;
+            font-size: 20px;
             font-weight: 700;
         }
         
@@ -293,7 +293,7 @@
             flex-direction: row;
             justify-content: space-between;
             /* justifie les éléments et garde le même espace entre eux */
-            align-items: center;
+            /* align-items: center;*/
             margin-top: 0;
         }
         
@@ -673,7 +673,7 @@
         }
         
         #activites figcaption {
-            font-size: 1.2em;
+            font-size: 1em;
             font-weight: bold;
             padding: 15px 0 0 15px;
         }
@@ -737,7 +737,7 @@
         }
         
         footer h3 {
-            font-size: 1.5em;
+            font-size: 1.3em;
             font-weight: bold;
             padding-bottom: 15px;
         }
@@ -837,6 +837,11 @@
                 height: auto;
                 justify-content: center;
                 /* justify-content: flex-end;*/
+            }
+            #activites figcaption {
+                font-size: 1em;
+                font-weight: bold;
+                padding: 15px 0 15px 15px;
             }
             #activites figure {
                 width: 100%;
@@ -952,7 +957,7 @@
                 height: auto;
             }
             footer h3 {
-                font-size: 1.5em;
+                font-size: 1.2em;
                 font-weight: bold;
                 padding-top: 15px;
                 padding-bottom: 15px;
