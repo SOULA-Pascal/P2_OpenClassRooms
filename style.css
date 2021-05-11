@@ -691,6 +691,7 @@
             
             .activites-solo {
                 width: 25%;
+                margin: 15px 15px 15px 15px;
             }
             
             .activites-solo figure {
@@ -703,10 +704,12 @@
                 height: 470px;
                 object-fit: cover;
                 border-radius: 15px 15px 0 0;
+                box-shadow: 5px 5px 5px #f2f2f2
             }
             
             .activites-duo {
                 width: 25%;
+                margin: 15px 15px 15px 15px;
             }
             
             .activites-duo-top figure {
