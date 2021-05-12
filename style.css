@@ -1,5 +1,5 @@
-            /* Feuille de Style CSS pour Projet P2 PSa 2021_04  */
-            /* ================================================ */
+            /* Feuille de Style CSS pour Projet P2 Reservia PSa 2021_04  */
+            /* ========================================================= */
             /* Reset CSS
    http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -212,6 +212,20 @@
                 font-weight: bold;
             }
             
+            h5 {
+                font-size: 15px;
+                font-weight: 900;
+                font-weight: bold;
+            }
+            
+            .padding-solo-h5 {
+                padding: 15px 0 0 15px;
+            }
+            
+            .padding-duo-h5 {
+                padding: 15px 0 0 15px;
+            }
+            
             .d-flex {
                 display: flex!important;
             }
@@ -256,11 +270,19 @@
             }
             
             .padding-section {
-                padding: 45px 20px 25px 20px;
+                padding: 25px 20px 25px 20px;
             }
             
             .d-lg {
                 display: none;
+            }
+            
+            .nom-hotel-pl-15 {
+                padding-left: 15px;
+            }
+            
+            .nom-hotel-populaires-pl-20 {
+                padding: 50px 0 0 20px;
             }
             
             .pl-15 {
@@ -323,6 +345,7 @@
             .banner a:hover {
                 color: #0065FC;
                 border-top: solid 3px #0065FC;
+                padding: 25px 0 0 0;
             }
             /* on définit la classe active comme le hover  */
             
@@ -502,9 +525,9 @@
             
             #hebergements {
                 height: 800px;
-                display: flex;
+                /*display: flex;*/
             }
-            
+            /*
             #hebergements figure {
                 border-radius: 20px;
                 margin: 20px;
@@ -515,6 +538,7 @@
                 font-weight: bold;
                 padding: 15px 0 0 0;
             }
+            */
             
             .hebergements-content {
                 display: flex;
@@ -539,6 +563,7 @@
             .hotel__marseille {
                 display: flex;
                 flex-wrap: wrap;
+                padding: 0 15px 0 15px;
             }
             
             .images__hotel {
@@ -578,24 +603,25 @@
             .hebergements-populaires {
                 width: 25%;
             }
-            
+            /*
             .hebergements-populaires figure {
                 height: 180px;
                 box-shadow: 5px 5px 5px #f2f2f2;
             }
+            */
             
             .hebergements-populaires img {
                 width: 35%;
                 height: 150px;
                 object-fit: cover;
                 border-radius: 15px 15px 0 0;
-                float: left;
+                /*float: left;*/
                 margin-right: 15px;
             }
             
             .text-populaire {
                 text-align: left;
-                padding-left: 1em;
+                /*padding-left: 1em;*/
             }
             
             #populaires {
@@ -626,6 +652,7 @@
                 height: 800px;
                 border-radius: 20px;
                 background-color: #f2f2f2;
+                padding: 0 10px 0 10px;
             }
             
             .images__align {
@@ -634,10 +661,16 @@
                 height: 220px;
                 margin: 10px;
                 display: flex;
+                flex-direction: row;
+            }
+            
+            .images__hotel_populaire {
+                /*width: 100%;*/
+                height: 250px;
             }
             
             .images__hotel_populaire img {
-                width: 40%;
+                width: 230px;
                 height: 205px;
                 border-radius: 20px 0 0 20px;
                 padding: 8px 0 8px 8px;
@@ -672,7 +705,7 @@
                 display: flex;
                 flex-direction: column;
             }
-            
+            /*
             #activites figure {
                 border-radius: 20px;
                 margin: 20px;
@@ -683,6 +716,7 @@
                 font-weight: bold;
                 padding: 15px 0 0 15px;
             }
+            */
             
             .activites-content {
                 display: flex;
@@ -692,16 +726,19 @@
             .activites-solo {
                 width: 25%;
                 margin: 15px 15px 15px 15px;
+                box-shadow: 5px 3px 3px lightgrey;
+                border-radius: 15px 15px 15px 15px;
             }
-            
+            /*
             .activites-solo figure {
                 height: 520px;
                 box-shadow: 5px 5px 5px #f2f2f2
             }
+            */
             
             .activites-solo img {
                 width: 100%;
-                height: 470px;
+                height: 595px;
                 object-fit: cover;
                 border-radius: 15px 15px 0 0;
                 box-shadow: 5px 5px 5px #f2f2f2
@@ -709,29 +746,52 @@
             
             .activites-duo {
                 width: 25%;
+                display: flex;
+                flex-direction: column;
+                height: 650px;
                 margin: 15px 15px 15px 15px;
+                /*box-shadow: 5px 3px 3px lightgrey;*/
+                /*border-radius: 15px 15px 15px 15px;*/
             }
-            
+            /*
             .activites-duo-top figure {
                 height: 250px;
                 box-shadow: 5px 5px 5px #f2f2f2
             }
+            */
+            
+            .activites-duo-top {
+                width: 100%;
+                height: 325px;
+                box-shadow: 5px 5px 5px #f2f2f2;
+                border-radius: 15px 15px 15px 15px;
+                margin: 0 0 20px 0;
+            }
             
             .activites-duo-top img {
                 width: 100%;
-                height: 200px;
+                height: 250px;
                 object-fit: cover;
                 border-radius: 15px 15px 0 0;
             }
-            
+            /*
             .activites-duo-bottom figure {
                 height: 250px;
                 box-shadow: 5px 5px 5px #f2f2f2
             }
+            */
+            
+            .activites-duo-bottom {
+                width: 100%;
+                height: 325px;
+                box-shadow: 5px 5px 5px #f2f2f2;
+                border-radius: 15px 15px 15px 15px;
+                margin: 20px 0 0 0;
+            }
             
             .activites-duo-bottom img {
                 width: 100%;
-                height: 200px;
+                height: 250px;
                 object-fit: cover;
                 border-radius: 15px 15px 0 0;
             }
@@ -836,7 +896,7 @@
                     font-size: 18px;
                     padding-left: 15px;
                 }
-                #populaires .-container_populaires {
+                #populaires .container_populaires {
                     flex-direction: column;
                     justify-content: center;
                 }
