@@ -1,964 +1,930 @@
-            /* Feuille de Style CSS pour Projet P2 Reservia PSa 2021_04  */
-            /* ========================================================= */
-            /* Reset CSS
+/* Feuille de Style CSS pour Projet P2 Reservia PSa 2021_04  */
+
+
+/* ========================================================= */
+
+
+/* Reset CSS
    http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-            
-            html,
-            body,
-            div,
-            span,
-            applet,
-            object,
-            iframe,
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6,
-            p,
-            blockquote,
-            pre,
-            a,
-            abbr,
-            acronym,
-            address,
-            big,
-            cite,
-            code,
-            del,
-            dfn,
-            em,
-            img,
-            ins,
-            kbd,
-            q,
-            s,
-            samp,
-            small,
-            strike,
-            strong,
-            sub,
-            sup,
-            tt,
-            var,
-            b,
-            u,
-            i,
-            center,
-            dl,
-            dt,
-            dd,
-            ol,
-            ul,
-            li,
-            fieldset,
-            form,
-            label,
-            legend,
-            table,
-            caption,
-            tbody,
-            tfoot,
-            thead,
-            tr,
-            th,
-            td,
-            article,
-            aside,
-            canvas,
-            details,
-            embed,
-            figure,
-            figcaption,
-            footer,
-            header,
-            hgroup,
-            menu,
-            nav,
-            output,
-            ruby,
-            section,
-            summary,
-            time,
-            mark,
-            audio,
-            video {
-                margin: 0;
-                padding: 0;
-                border: 0;
-                font-size: 100%;
-                font: inherit;
-                vertical-align: baseline;
-            }
-            /* HTML5 display-role reset for older browsers */
-            
-            article,
-            aside,
-            details,
-            figcaption,
-            figure,
-            footer,
-            header,
-            hgroup,
-            menu,
-            nav,
-            section {
-                display: block;
-            }
-            
-            body {
-                line-height: 1;
-            }
-            
-            ol,
-            ul {
-                list-style: none;
-            }
-            
-            blockquote,
-            q {
-                quotes: none;
-            }
-            
-            blockquote:before,
-            blockquote:after,
-            q:before,
-            q:after {
-                content: '';
-                content: none;
-            }
-            
-            table {
-                border-collapse: collapse;
-                border-spacing: 0;
-            }
-            /*   Fin du Reset CSS   */
-            /* ============================ */
-            /*   Début style page CSS PSa   */
-            /* ============================ */
-            /*  --------- Polices -------- */
-            
-            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-            /*   Caractéristiques Page Web  */
-            
-            html {
-                --blue: #0065FC;
-                --lightblue: #DEEBFF;
-                --grey: #F2F2F2;
-            }
-            
-            body {
-                font-family: 'Raleway', sans-serif;
-            }
-            /* Mise en forme du texte et images */
-            /* ================================ */
-            
-            .text-bold {
-                font-weight: bold;
-            }
-            
-            .text-blue {
-                color: var(--blue);
-            }
-            
-            .text-grey {
-                color: var(--grey);
-            }
-            
-            .text-lightblue {
-                color: var(--lightblue);
-            }
-            
-            .greybg {
-                background: var(--grey);
-            }
-            
-            a {
-                text-decoration: none;
-                color: #000;
-            }
-            
-            h1 {
-                font-size: 16px;
-                font-weight: 700;
-            }
-            
-            @-moz-document url-prefix() {
-                h1 {
-                    font-weight: bold;
-                }
-            }
-            
-            h2 {
-                font-size: 20px;
-                font-weight: 700;
-            }
-            
-            h3 {
-                font-size: 18px;
-            }
-            
-            h4 {
-                font-size: 20px;
-                font-weight: 900;
-                font-weight: bold;
-            }
-            
-            h5 {
-                font-size: 15px;
-                font-weight: 900;
-                font-weight: bold;
-            }
-            
-            .padding-solo-h5 {
-                padding: 15px 0 0 15px;
-            }
-            
-            .padding-duo-h5 {
-                padding: 15px 0 0 15px;
-            }
-            
-            .d-flex {
-                display: flex!important;
-            }
-            
-            .d-flex--wrap {
-                flex-wrap: wrap;
-            }
-            
-            .d-flex--column {
-                flex-direction: column;
-            }
-            
-            .d-flex--row {
-                flex-direction: row;
-            }
-            
-            .justify-content-center {
-                justify-content: center;
-            }
-            
-            .justify-content-space-around {
-                justify-content: space-around;
-            }
-            
-            .justify-content-between {
-                justify-content: space-between;
-            }
-            
-            .align-items-center {
-                align-items: center;
-            }
-            
-            .btn {
-                border: none;
-                outline: none;
-                cursor: pointer;
-            }
-            
-            .img-fluid {
-                width: 100%;
-                height: auto;
-            }
-            
-            .padding-section {
-                padding: 25px 20px 25px 20px;
-            }
-            
-            .d-lg {
-                display: none;
-            }
-            
-            .nom-hotel-pl-15 {
-                padding-left: 15px;
-            }
-            
-            .nom-hotel-populaires-pl-20 {
-                padding: 50px 0 0 20px;
-            }
-            
-            .pl-15 {
-                padding-left: 15px;
-            }
-            /* Logo et Barre de Navigation */
-            /* =========================== */
-            /* Logo */
-            
-            #logo-reservia {
-                height: 100px;
-                display: flex;
-                padding-left: 25px;
-                margin-top: 40px;
-                flex-direction: column;
-            }
-            
-            .logo-reservia img {
-                width: 115px;
-                padding: 15px;
-            }
-            /* Barre de Navigation */
-            
-            .banner {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-            }
-            
-            .banner nav {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                /* justifie les éléments et garde le même espace entre eux */
-                /* align-items: center;*/
-                margin-top: 0;
-            }
-            
-            .navigation-right {
-                display: flex;
-                margin-right: 25px;
-                /* border : 3px solid transparent; */
-            }
-            
-            .a1 {
-                grid-column: 4;
-            }
-            
-            .banner .heberg_activ a {
-                color: black;
-                text-align: center;
-                line-height: 125px;
-                margin-right: 80px;
-            }
-            
-            .banner .subscribe a {
-                line-height: 125px;
-            }
-            
-            .banner a:hover {
-                color: #0065FC;
-                border-top: solid 3px #0065FC;
-                padding: 25px 0 0 0;
-            }
-            /* on définit la classe active comme le hover  */
-            
-            .active {
-                color: #0065FC;
-                border-top: 5px solid #0065FC;
-                padding-top: 23px;
-            }
-            
-            .banner a {
-                align-items: center;
-                text-decoration: none;
-            }
-            
-            .banner .subscribe {
-                color: #0065FC;
-                font-weight: bold;
-            }
-            /* Header */
-            /* ====== */
-            
-            #header {
-                height: 100px;
-                display: flex;
-                flex-direction: column;
-            }
-            
-            .header h1 {
-                font-size: 1.5em;
-                font-weight: bold;
-                padding-bottom: 15px;
-            }
-            /* Barre de Recherche */
-            
-            #searchbar-filters {
-                padding: 0 25px;
-            }
-            
-            .searchbar__title {
-                font-size: 1.7rem;
-                margin-bottom: 15px;
-                line-height: 110%;
-            }
-            
-            .searchbar__subtitle {
-                font-size: 1.25rem;
-                margin-bottom: 30px;
-            }
-            
-            .searchbar__form {
-                margin: 35px 0;
-                width: 380px;
-            }
-            
-            input.searchbar__input {
-                flex-grow: 2;
-                padding: 15px 20px;
-                height: 20px;
-                border: 2px solid var(--grey);
-                border-right: none;
-                border-left: none;
-                background-color: white;
-                width: 50%;
-            }
-            
-            input.searchbar__input::placeholder,
-            input.searchbar__input:focus,
-            input.searchbar__input {
-                color: black;
-                opacity: 1;
-                font-weight: bold;
-                font-size: 1.1rem;
-            }
-            
-            .searchbar__label {
-                height: 20px;
-                font-size: 1.2rem;
-                background: var(--grey);
-                padding: 15px 20px;
-                border: 2px solid var(--grey);
-                border-top-left-radius: 15px;
-                border-bottom-left-radius: 15px;
-            }
-            
-            .searchbar__btn {
-                background: var(--blue);
-                font-size: 1.2rem;
-                color: white;
-                border-radius: 15px;
-                border-color: var(--blue);
-                position: relative;
-                right: 25px;
-                min-height: 54px;
-                min-width: 54px;
-            }
-            /* Barre des filtres */
-            
-            .filter-right {
-                display: flex;
-                margin-right: 40px;
-            }
-            
-            .filters__title {
-                font-size: 1.2rem;
-                margin-bottom: 5px;
-            }
-            
-            .filters__content {
-                flex-wrap: wrap;
-                gap: 15px;
-            }
-            
-            .filters__content button {
-                display: flex;
-                align-items: center;
-                max-height: 52px;
-            }
-            
-            .filters__content button i {
-                background: var(--lightblue);
-                color: var(--blue);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 52px;
-                width: 52px;
-                border-radius: 30px;
-                font-size: 1.4rem;
-                position: relative;
-                left: -8px;
-            }
-            
-            button.filters__btn {
-                border: 3px solid var(--grey);
-                border-left: none;
-                border-radius: 30px;
-                padding: 0 15px 0 0;
-                font-size: 1.2rem;
-                background: white;
-                background: linear-gradient(to left, white 50%, var(--lightblue) 50%) right;
-                background-size: 200%;
-                transition: all 0.125s;
-            }
-            
-            button.filters__btn:hover {
-                background-position: left;
-                border-color: var(--lightblue);
-                transition: all 0.3s cubic-bezier(0, 1, 1, 1);
-            }
-            /* Infos */
-            
-            .filters__info {
-                margin: 30px 0;
-                display: flex;
-                align-items: baseline;
-                font-size: 1.1rem;
-            }
-            
-            .filters__info i {
-                color: var(--blue);
-                background: white;
-                border: 2px solid var(--grey);
-                border-radius: 30px;
-                min-height: 25px;
-                min-width: 25px;
-                margin-right: 10px;
-            }
-            /* Section Hébergements à Marseille et Populaires */
-            /* ============================================== */
-            /* Permet au contenu Hébergements et Populaires d'être alignés et flex */
-            
-            .flex__container {
-                display: flex;
-            }
-            /* Hébergements à Marseille */
-            /* ======================== */
-            
-            #hebergements {
-                height: 800px;
-                /*display: flex;*/
-            }
-            /*
-            #hebergements figure {
-                border-radius: 20px;
-                margin: 20px;
-            }
-            
-            #hebergements figcaption {
-                font-size: 1.2em;
-                font-weight: bold;
-                padding: 15px 0 0 0;
-            }
-            */
-            
-            .hebergements-content {
-                display: flex;
-                height: 100%;
-            }
-            /*--les hébergements de Marseille */
-            
-            .container__marseille {
-                flex: 67%;
-                margin-left: 20px;
-                height: 800px;
-                margin-right: 20px;
-                background-color: #f2f2f2;
-                border-radius: 20px;
-            }
-            
-            .container__marseille h2 {
-                margin-left: 20px;
-                padding-top: 20px;
-            }
-            
-            .hotel__marseille {
-                display: flex;
-                flex-wrap: wrap;
-                padding: 0 15px 0 15px;
-            }
-            
-            .images__hotel {
-                flex: 27%;
-                background-color: white;
-                box-shadow: 5px 3px 3px lightgrey;
-                margin: 10px;
-                border-radius: 20px;
-            }
-            
-            .images__hotel img {
-                width: 97%;
-                height: 200px;
-                border-radius: 20px 20px 0 0;
-                padding: 8px 8px 5px 8px;
-            }
-            
-            .images__hotel h3 {
-                margin: 0px 0 10px 10px;
-            }
-            
-            .images__hotel h4 {
-                margin: 15px 0 5px 0;
-            }
-            
-            .afficherplus h3 {
-                margin: 45px 0 0 20px;
-                font-weight: bold;
-            }
-            
-            .afficherplus a:hover {
-                color: #0065FC;
-            }
-            /* Hébergements les plus populaires */
-            /* ================================ */
-            
-            .hebergements-populaires {
-                width: 25%;
-            }
-            /*
-            .hebergements-populaires figure {
-                height: 180px;
-                box-shadow: 5px 5px 5px #f2f2f2;
-            }
-            */
-            
-            .hebergements-populaires img {
-                width: 35%;
-                height: 150px;
-                object-fit: cover;
-                border-radius: 15px 15px 0 0;
-                /*float: left;*/
-                margin-right: 15px;
-            }
-            
-            .text-populaire {
-                text-align: left;
-                /*padding-left: 1em;*/
-            }
-            
-            #populaires {
-                height: 800px;
-                display: flex;
-                flex-direction: column;
-            }
-            /*
-        #populaires figure {
-            border-radius: 20px;
-            margin: 20px;
-            max-width: 240px;
-        }
-        
-        #populaires figcaption {
-            font-size: 1.2em;
-            font-weight: bold;
-            padding: 30px 0 0 0;
-        }
-        */
-            /* Division de droite avec les plus populaires */
-            
-            .container_populaires {
-                display: flex;
-                flex-direction: column;
-                flex: 28%;
-                margin-right: 20px;
-                height: 800px;
-                border-radius: 20px;
-                background-color: #f2f2f2;
-                padding: 0 10px 0 10px;
-            }
-            
-            .images__align {
-                background-color: white;
-                border-radius: 20px;
-                height: 220px;
-                margin: 10px;
-                display: flex;
-                flex-direction: row;
-            }
-            
-            .images__hotel_populaire {
-                /*width: 100%;*/
-                height: 250px;
-            }
-            
-            .images__hotel_populaire img {
-                width: 230px;
-                height: 205px;
-                border-radius: 20px 0 0 20px;
-                padding: 8px 0 8px 8px;
-            }
-            
-            .container_populaires a {
-                color: black;
-                text-decoration: none;
-            }
-            
-            .populaires__title {
-                margin-top: 20px;
-                margin-left: 10px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-            
-            .populaires__title i {
-                margin-right: 10px;
-                color: black;
-            }
-            
-            .name__hotel h3 {
-                margin-top: 10px;
-            }
-            /* Activités */
-            /* ========= */
-            
-            #activites {
-                height: 700px;
-                display: flex;
-                flex-direction: column;
-            }
-            /*
-            #activites figure {
-                border-radius: 20px;
-                margin: 20px;
-            }
-            
-            #activites figcaption {
-                font-size: 1em;
-                font-weight: bold;
-                padding: 15px 0 0 15px;
-            }
-            */
-            
-            .activites-content {
-                display: flex;
-                height: 100%;
-            }
-            
-            .activites-solo {
-                width: 25%;
-                margin: 15px 15px 15px 15px;
-                box-shadow: 5px 3px 3px lightgrey;
-                border-radius: 15px 15px 15px 15px;
-            }
-            /*
-            .activites-solo figure {
-                height: 520px;
-                box-shadow: 5px 5px 5px #f2f2f2
-            }
-            */
-            
-            .activites-solo img {
-                width: 100%;
-                height: 595px;
-                object-fit: cover;
-                border-radius: 15px 15px 0 0;
-                box-shadow: 5px 5px 5px #f2f2f2
-            }
-            
-            .activites-duo {
-                width: 25%;
-                display: flex;
-                flex-direction: column;
-                height: 650px;
-                margin: 15px 15px 15px 15px;
-                /*box-shadow: 5px 3px 3px lightgrey;*/
-                /*border-radius: 15px 15px 15px 15px;*/
-            }
-            /*
-            .activites-duo-top figure {
-                height: 250px;
-                box-shadow: 5px 5px 5px #f2f2f2
-            }
-            */
-            
-            .activites-duo-top {
-                width: 100%;
-                height: 325px;
-                box-shadow: 5px 5px 5px #f2f2f2;
-                border-radius: 15px 15px 15px 15px;
-                margin: 0 0 20px 0;
-            }
-            
-            .activites-duo-top img {
-                width: 100%;
-                height: 250px;
-                object-fit: cover;
-                border-radius: 15px 15px 0 0;
-            }
-            /*
-            .activites-duo-bottom figure {
-                height: 250px;
-                box-shadow: 5px 5px 5px #f2f2f2
-            }
-            */
-            
-            .activites-duo-bottom {
-                width: 100%;
-                height: 325px;
-                box-shadow: 5px 5px 5px #f2f2f2;
-                border-radius: 15px 15px 15px 15px;
-                margin: 20px 0 0 0;
-            }
-            
-            .activites-duo-bottom img {
-                width: 100%;
-                height: 250px;
-                object-fit: cover;
-                border-radius: 15px 15px 0 0;
-            }
-            /* Footer */
-            /* ====== */
-            
-            footer {
-                display: flex;
-                justify-content: space-around;
-                background: #F2F2F2;
-                padding: 30px;
-            }
-            
-            footer h3 {
-                font-size: 1.3em;
-                font-weight: bold;
-                padding-bottom: 15px;
-            }
-            
-            footer ul li {
-                line-height: 1.7em;
-            }
-            /* ============= */
-            /* Partie Mobile */
-            /* ============= */
-            /* Smartphones */
-            
-            @media (min-width: 300px) and (max-width: 767px) {
-                /*   Ecrire dans ce bloc les propriétés CSS Mobile .monCss {...} */
-                body {
-                    margin-left: auto;
-                    margin-right: auto;
-                    padding-left: 5px;
-                    padding-right: 5px;
-                    max-width: 767px;
-                }
-                .logo-reservia {
-                    display: block;
-                }
-                .logo-reservia {
-                    padding: 10px 0px 0px 20px;
-                }
-                .banner {
-                    padding: 0px;
-                }
-                .header a {
-                    font-size: 1.3em;
-                    display: block;
-                }
-                #navigation-right {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    border-radius: 0px;
-                    width: 100%;
-                    margin: 0px;
-                    height: auto;
-                }
-                .navigation-right {
-                    /* display: block;*/
-                    display: inline-flex;
-                    width: 100%;
-                }
-                .heberg_activ {
-                    position: absolute;
-                    top: 1em;
-                }
-                .subscribe {
-                    position: absolute;
-                    top: 1em;
-                    right: 1.5em;
-                }
-                nav {
-                    width: auto;
-                    text-align: left;
-                    flex-direction: column-reverse!important;
-                }
-                nav a {
-                    font-size: 1.1em;
-                }
-                nav a:hover {
-                    border-bottom: 0;
-                }
-                .searchbar-filters {
-                    display: block;
-                }
-                /* Populaires */
-                #populaires {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    border-radius: 0px;
-                    width: 100%;
-                    margin: 0px;
-                    height: auto;
-                }
-                #populaires .populaires__title i {
-                    font-size: 20px;
-                    padding-right: 20px;
-                }
-                .populaires__title h2 {
-                    font-size: 18px;
-                    padding-left: 15px;
-                }
-                #populaires .container_populaires {
-                    flex-direction: column;
-                    justify-content: center;
-                }
-                #populaires .images__hotel_populaire {
-                    justify-content: center;
-                    width: 100%;
-                    margin: 0px;
-                    margin-bottom: 2em;
-                }
-                /* Hébergements */
-                #hebergements {
-                    display: flex;
-                    flex-direction: column-reverse;
-                    justify-content: center;
-                    height: auto;
-                    /**/
-                    gap: 0 1.25%;
-                }
-                .hotel__marseille {
-                    /* display: grid; equivalent à display + flex-direction */
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                }
-                /* Activités */
-                #activites {
-                    display: flex;
-                    flex-direction: column;
-                    height: auto;
-                    justify-content: center;
-                    /* justify-content: flex-end;*/
-                }
-                #activites figcaption {
-                    font-size: 1em;
-                    font-weight: bold;
-                    padding: 15px 0 15px 15px;
-                }
-                #activites figure {
-                    width: 100%;
-                }
-                #activites figure img {
-                    height: 100%;
-                }
-                #activites figure {
-                    /*height: 150px;*/
-                    height: auto;
-                }
-                .activites {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    height: auto;
-                    /**/
-                }
-                .activites h2 {
-                    padding-left: 2em;
-                }
-                .activites-content {
-                    display: flex;
-                    height: 100%;
-                    flex-direction: column;
-                }
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*   Fin du Reset CSS   */
+
+
+/* ============================ 
+/*   Début style page CSS PSa   
+/* ============================ */
+
+
+/*  --------- Polices -------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+/*   Caractéristiques Page Web  */
+
+html {
+    --blue: #0065FC;
+    --lightblue: #DEEBFF;
+    --grey: #F2F2F2;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* Mise en forme du texte et images
+/* ================================ */
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-blue {
+    color: var(--blue);
+}
+
+.text-grey {
+    color: var(--grey);
+}
+
+.text-lightblue {
+    color: var(--lightblue);
+}
+
+.greybg {
+    background: var(--grey);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@-moz-document url-prefix() {
+    h1 {
+        font-weight: bold;
+    }
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 900;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 15px;
+    font-weight: 900;
+    font-weight: bold;
+}
+
+.padding-solo-h5 {
+    padding: 15px 0 0 15px;
+}
+
+.padding-duo-h5 {
+    padding: 15px 0 0 15px;
+}
+
+.d-flex {
+    display: flex!important;
+}
+
+.d-flex--wrap {
+    flex-wrap: wrap;
+}
+
+.d-flex--column {
+    flex-direction: column;
+}
+
+.d-flex--row {
+    flex-direction: row;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.padding-section {
+    padding: 25px 20px 25px 20px;
+}
+
+.d-lg {
+    display: none;
+}
+
+.nom-hotel-pl-15 {
+    padding-left: 15px;
+}
+
+.nom-hotel-populaires-pl-20 {
+    padding: 50px 0 0 20px;
+}
+
+.pl-15 {
+    padding-left: 15px;
+}
+
+
+/* Logo et Barre de Navigation 
+/* =========================== */
+
+
+/* Logo */
+
+#logo-reservia {
+    height: 100px;
+    display: flex;
+    padding-left: 25px;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.logo-reservia img {
+    width: 115px;
+    padding: 15px;
+}
+
+
+/* Barre de Navigation */
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.banner nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* justifie les éléments et garde le même espace entre eux */
+    margin-top: 0;
+}
+
+.navigation-right {
+    display: flex;
+    margin-right: 25px;
+    /* border : 3px solid transparent; */
+}
+
+.banner .heberg_activ a {
+    color: black;
+    text-align: center;
+    line-height: 125px;
+    margin-right: 80px;
+}
+
+.banner .subscribe a {
+    line-height: 125px;
+}
+
+.banner a:hover {
+    color: #0065FC;
+    border-top: solid 3px #0065FC;
+    padding: 25px 0 0 0;
+}
+
+
+/* on définit la classe active comme le hover  */
+
+.active {
+    color: #0065FC;
+    border-top: 5px solid #0065FC;
+    padding-top: 23px;
+}
+
+.banner a {
+    align-items: center;
+    text-decoration: none;
+}
+
+.banner .subscribe {
+    color: #0065FC;
+    font-weight: bold;
+}
+
+
+/* Header
+/* ====== */
+
+#header {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+
+/* Barre de Recherche */
+
+#searchbar-filters {
+    padding: 0 25px;
+}
+
+.searchbar__title {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+    line-height: 110%;
+}
+
+.searchbar__subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.searchbar__form {
+    margin: 35px 0;
+    width: 380px;
+}
+
+input.searchbar__input {
+    flex-grow: 2;
+    padding: 15px 20px;
+    height: 20px;
+    border: 2px solid var(--grey);
+    border-right: none;
+    border-left: none;
+    background-color: white;
+    width: 50%;
+}
+
+input.searchbar__input::placeholder,
+input.searchbar__input:focus,
+input.searchbar__input {
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.searchbar__label {
+    height: 20px;
+    font-size: 1.2rem;
+    background: var(--grey);
+    padding: 15px 20px;
+    border: 2px solid var(--grey);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.searchbar__btn {
+    background: var(--blue);
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 15px;
+    border-color: var(--blue);
+    position: relative;
+    right: 25px;
+    min-height: 54px;
+    min-width: 54px;
+}
+
+
+/* Barre des filtres */
+
+.filter-right {
+    display: flex;
+    margin-right: 40px;
+}
+
+.filters__title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.filters__content {
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filters__content button {
+    display: flex;
+    align-items: center;
+    max-height: 52px;
+}
+
+.filters__content button i {
+    background: var(--lightblue);
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    width: 52px;
+    border-radius: 30px;
+    font-size: 1.4rem;
+    position: relative;
+    left: -8px;
+}
+
+button.filters__btn {
+    border: 3px solid var(--grey);
+    border-left: none;
+    border-radius: 30px;
+    padding: 0 15px 0 0;
+    font-size: 1.2rem;
+    background: white;
+    background: linear-gradient(to left, white 50%, var(--lightblue) 50%) right;
+    background-size: 200%;
+    transition: all 0.125s;
+}
+
+button.filters__btn:hover {
+    background-position: left;
+    border-color: var(--lightblue);
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
+}
+
+
+/* Infos */
+
+.filters__info {
+    margin: 30px 0;
+    display: flex;
+    align-items: baseline;
+    font-size: 1.1rem;
+}
+
+.filters__info i {
+    color: var(--blue);
+    background: white;
+    border: 2px solid var(--grey);
+    border-radius: 30px;
+    min-height: 25px;
+    min-width: 25px;
+    margin-right: 10px;
+}
+
+
+/* Section Hébergements à Marseille et Populaires
+/* ============================================== */
+
+
+/* Permet au contenu Hébergements et Populaires d'être alignés et flex */
+
+.flex__container {
+    display: flex;
+}
+
+
+/* Hébergements à Marseille 
+/* ======================== */
+
+#hebergements {
+    height: 800px;
+}
+
+.hebergements-content {
+    display: flex;
+    height: 100%;
+}
+
+
+/*- Les Hébergements de Marseille - coté gauche */
+
+.container__marseille {
+    flex: 67%;
+    margin-left: 20px;
+    height: 800px;
+    margin-right: 20px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+.container__marseille h2 {
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.hotel__marseille {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px 0 15px;
+}
+
+.images__hotel {
+    flex: 27%;
+    background-color: white;
+    box-shadow: 5px 3px 3px lightgrey;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.images__hotel img {
+    width: 97%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    padding: 8px 8px 5px 8px;
+}
+
+.images__hotel h3 {
+    margin: 0px 0 10px 10px;
+}
+
+.images__hotel h4 {
+    margin: 15px 0 5px 0;
+}
+
+.afficherplus h3 {
+    margin: 45px 0 0 20px;
+    font-weight: bold;
+}
+
+.afficherplus a:hover {
+    color: #0065FC;
+}
+
+
+/* Hébergements les plus populaires
+/* ================================ */
+
+.hebergements-populaires {
+    width: 25%;
+}
+
+.hebergements-populaires img {
+    width: 35%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    /*float: left;*/
+    margin-right: 15px;
+}
+
+.text-populaire {
+    text-align: left;
+    /*padding-left: 1em;*/
+}
+
+#populaires {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Division de droite avec les plus populaires */
+
+.container_populaires {
+    display: flex;
+    flex-direction: column;
+    flex: 28%;
+    margin-right: 20px;
+    height: 800px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    padding: 0 10px 0 10px;
+}
+
+.images__align {
+    background-color: white;
+    border-radius: 20px;
+    height: 220px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 3px 3px lightgrey;
+}
+
+.images__hotel_populaire {
+    /*width: 100%;*/
+    height: 250px;
+}
+
+.images__hotel_populaire img {
+    width: 230px;
+    height: 205px;
+    border-radius: 20px 0 0 20px;
+    padding: 8px 0 8px 8px;
+}
+
+.container_populaires a {
+    color: black;
+    text-decoration: none;
+}
+
+.populaires__title {
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires__title i {
+    margin-right: 10px;
+    color: black;
+}
+
+.name__hotel h3 {
+    margin-top: 10px;
+}
+
+
+/* Activités 
+/* ========= */
+
+#activites {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.activites-content {
+    display: flex;
+    height: 100%;
+}
+
+.activites-solo {
+    width: 25%;
+    margin: 15px 15px 15px 15px;
+    box-shadow: 5px 3px 3px lightgrey;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.activites-solo img {
+    width: 100%;
+    height: 595px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 5px 5px 5px #f2f2f2
+}
+
+.activites-duo {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    margin: 15px 15px 15px 15px;
+}
+
+.activites-duo-top {
+    width: 100%;
+    height: 325px;
+    box-shadow: 5px 3px 3px lightgrey;
+    border-radius: 15px 15px 15px 15px;
+    margin: 0 0 20px 0;
+}
+
+.activites-duo-top img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.activites-duo-bottom {
+    width: 100%;
+    height: 325px;
+    box-shadow: 5px 3px 3px lightgrey;
+    /* box-shadow: 5px 3px 3px #f2f2f2; gris plus léger */
+    border-radius: 15px 15px 15px 15px;
+    margin: 20px 0 0 0;
+}
+
+.activites-duo-bottom img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+
+/* Footer 
+/* ====== */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background: #F2F2F2;
+    padding: 30px;
+}
+
+footer h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+footer ul li {
+    line-height: 1.7em;
+}
+
+
+/* ============= 
+/* Partie Mobile 
+/* ============= */
+
+
+/* Smartphones */
+
+@media (min-width: 300px) and (max-width: 767px) {
+    /*   Ecrire dans ce bloc les propriétés CSS Mobile .monCss {...} */
+    body {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 767px;
+    }
+    .logo-reservia {
+        display: block;
+    }
+    .logo-reservia {
+        padding: 10px 0px 0px 20px;
+    }
+    .banner {
+        padding: 0px;
+    }
+    .header a {
+        font-size: 1.3em;
+        display: block;
+    }
+    #navigation-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 0px;
+        width: 100%;
+        margin: 0px;
+        height: auto;
+    }
+    .navigation-right {
+        display: inline-flex;
+        width: 100%;
+    }
+    .heberg_activ {
+        display: flex;
+        flex-direction: raw;
+        top: 1em;
+    }
+    .subscribe {
+        top: 1em;
+        right: 1.5em;
+        text-align: right;
+        padding-right: 25px;
+    }
+    nav {
+        width: auto;
+        text-align: left;
+        flex-direction: column-reverse!important;
+    }
+    nav a {
+        font-size: 1.1em;
+    }
+    nav a:hover {
+        border-bottom: 0;
+    }
+    .searchbar-filters {
+        display: block;
+    }
+    /* Populaires */
+    #populaires {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 0px;
+        width: 100%;
+        margin: 0px;
+        height: auto;
+    }
+    #populaires .populaires__title i {
+        font-size: 20px;
+        padding-right: 20px;
+    }
+    .populaires__title h2 {
+        font-size: 18px;
+        padding-left: 15px;
+    }
+    #populaires .container_populaires {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #populaires .images__hotel_populaire {
+        justify-content: center;
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 2em;
+    }
+    /* Hébergements */
+    #hebergements {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: auto;
+        /**/
+        gap: 0 1.25%;
+    }
+    .hotel__marseille {
+        /* display: grid; equivalent à display + flex-direction */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    /* Activités */
+    #activites {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        /* justify-content: flex-end;*/
+    }
+    .activites {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .activites h2 {
+        padding-left: 2em;
+    }
+    /*
                 .activites-solo {
                     display: flex;
                     flex-direction: column;
@@ -966,7 +932,25 @@
                     height: 50%;
                     margin: 0px;
                 }
-                .activites-solo img {
+                */
+    .activites-content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    .activites-solo {
+        width: 25%;
+        margin: 15px 15px 15px 15px;
+        box-shadow: 5px 3px 3px lightgrey;
+        border-radius: 15px 15px 15px 15px;
+    }
+    .afficherplus h3 {
+        margin: 45px 0 0 20px;
+        font-weight: bold;
+        padding: 0 0 40px 0;
+    }
+    /*.activites-solo img {
                     width: 100%;
                     height: auto;
                     object-fit: cover;
@@ -977,80 +961,106 @@
                     flex-direction: column;
                     width: 100%;
                     margin: 0px;
-                }
-                .activites-duo-top img {
-                    width: 100%;
-                    height: auto;
-                    object-fit: cover;
-                    border-radius: 15px 15px 0 0;
-                }
-                .figure {
-                    width: 80%;
-                    margin-top: 2em;
-                    margin-bottom: 2em;
-                }
-                /* Footer */
-                footer {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    justify-content: center;
-                    height: auto;
-                    /**/
-                }
-            }
-            /* Tablettes */
-            
-            @media (min-width: 768px) and (max-width: 1024px) {
-                main,
-                header {
-                    width: Auto;
-                    max-width: 1024px;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-                body {
-                    margin-left: auto;
-                    margin-right: auto;
-                    padding-left: 10px;
-                    padding-right: 10px;
-                    max-width: 1024px;
-                }
-                /* Populaires */
-                #populaires {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    border-radius: 0px;
-                    /*width: 100%;*/
-                    width: Auto;
-                    margin: 0px;
-                    height: auto;
-                }
-                /* Hébergements */
-                #hebergements {
-                    display: flex;
-                    flex-direction: column-reverse;
-                    justify-content: center;
-                    height: auto;
-                    /**/
-                    gap: 0 1.25%;
-                }
-                .afficherplus h3 {
-                    margin: 75px 0 50px 25px;
-                    font-weight: bold;
-                }
-                /* Footer Tablette */
-                footer {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
-                    height: auto;
-                }
-                footer h3 {
-                    font-size: 1.2em;
-                    font-weight: bold;
-                    padding-top: 15px;
-                    padding-bottom: 15px;
-                }
-            }
+                }*/
+    .activites-solo img {
+        width: 100%;
+        height: 595px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+        box-shadow: 5px 5px 5px #f2f2f2
+    }
+    .activites-duo {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        height: 650px;
+        margin: 15px 15px 15px 15px;
+        /*box-shadow: 5px 3px 3px lightgrey;*/
+        /*border-radius: 15px 15px 15px 15px;*/
+    }
+    .activites-duo-top img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+    .activites-duo-bottom {
+        width: 100%;
+        height: 325px;
+        box-shadow: 5px 5px 5px #f2f2f2;
+        border-radius: 15px 15px 15px 15px;
+        margin: 20px 0 0 0;
+    }
+    .activites-duo-bottom img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+    /* Footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        justify-content: center;
+        height: auto;
+        /**/
+    }
+}
+
+
+/* Tablettes */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    main,
+    header {
+        width: Auto;
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 1024px;
+    }
+    /* Populaires */
+    #populaires {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 0px;
+        /*width: 100%;*/
+        width: Auto;
+        margin: 0px;
+        height: auto;
+    }
+    /* Hébergements */
+    #hebergements {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: auto;
+        /**/
+        gap: 0 1.25%;
+    }
+    .afficherplus h3 {
+        margin: 75px 0 50px 25px;
+        font-weight: bold;
+    }
+    /* Footer Tablette */
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+    }
+    footer h3 {
+        font-size: 1.2em;
+        font-weight: bold;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
