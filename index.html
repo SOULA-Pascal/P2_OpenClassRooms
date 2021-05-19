@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Projet P2 Reservia Pascal  2021_04 -->
+<!-- Projet P2 Reservia Pascal SOULA 2021_04-05 -->
 
 <html lang="fr">
 
@@ -103,13 +103,13 @@
                         <div class="nom-hotel-pl-15">
                             <h4>Auberge de la Cannebiere</h4>
                             <p>Nuit à partir de <b>25 €</b></p>
-                            <div>
+                            <div class="etoiles_hebergements">
                                 <i class="fas fa-star text-blue"></i>
                                 <!-- fas = etoile pleine - far = étoile vide-->
                                 <i class="fas fa-star text-blue"></i>
                                 <i class="fas fa-star text-blue"></i>
                                 <i class="fas fa-star text-blue"></i>
-                                <i class="fas fa-star text-grey"></i><br><br>
+                                <i class="fas fa-star text-grey"></i>
                             </div>
                         </div>
                     </div>
@@ -124,12 +124,12 @@
                         <div class="nom-hotel-pl-15">
                             <h4>Hôtel du Port</h4>
                             <p>Nuit à partir de <b>52 €</b></p>
-                            <div>
+                            <div class="etoiles_hebergements">
                                 <i class="fas fa-star text-blue"></i>
                                 <i class="fas fa-star text-blue"></i>
                                 <i class="fas fa-star text-blue"></i>
                                 <i class="fas fa-star text-blue"></i>
-                                <i class="fas fa-star text-blue"></i><br><br>
+                                <i class="fas fa-star text-blue"></i>
                             </div>
                         </div>
                     </div>
@@ -145,12 +145,12 @@
                         <div class="nom-hotel-pl-15">
                             <h4>Hôtel Les Mouettes</h4>
                             <p>Nuit à partir de <b>76 €</b></p>
-                            <div>
+                            <div class="etoiles_hebergements">
                                 <i class="fas fa-star text-blue"></i>
                                 <i class="fas fa-star text-blue"></i>
                                 <i class="fas fa-star text-blue"></i>
                                 <i class="fas fa-star text-blue"></i>
-                                <i class="fas fa-star text-grey"></i><br><br>
+                                <i class="fas fa-star text-grey"></i>
                             </div>
                         </div>
                     </div>
@@ -166,12 +166,12 @@
                         <div class="nom-hotel-pl-15" style="display: flex; flex-direction: column;">
                             <h4>Hôtel de la Mer</h4>
                             <p>Nuit à partir de <b>46 €</b></p>
-                            <div>
+                            <div class="etoiles_hebergements">
                                 <i class="fas fa-star text-blue"></i>
                                 <i class="fas fa-star text-blue"></i>
                                 <i class="fas fa-star text-blue"></i>
                                 <i class="far fa-star text-grey"></i>
-                                <i class="far fa-star text-grey"></i><br><br>
+                                <i class="far fa-star text-grey"></i>
                             </div>
                         </div>
                     </div>
@@ -187,7 +187,7 @@
                         <div class="nom-hotel-pl-15">
                             <h4>Auberge Le Panier</h4>
                             <p>Nuit à partir de <b>23 €</b></p>
-                            <div>
+                            <div class="etoiles_hebergements">
                                 <i class="fas fa-star text-blue"></i>
                                 <i class="fas fa-star text-blue"></i>
                                 <i class="fas fa-star text-blue"></i>
@@ -207,7 +207,7 @@
                         <div class="nom-hotel-pl-15">
                             <h4>Hôtel chez Amina</h4>
                             <p>Nuit à partir de <b>96 €</b></p>
-                            <div>
+                            <div class="etoiles_hebergements">
                                 <i class="fas fa-star text-blue"></i>
                                 <i class="fas fa-star text-blue"></i>
                                 <i class="fas fa-star text-blue"></i>
@@ -258,8 +258,8 @@
                     <div class="nom-hotel-populaires-pl-20 d-flex d-flex--column">
                         <!--<div class="nom-hotel-populaires-pl-20" style="display: flex; flex-direction: column;"-->
                         <h4 class="text-populaire">Hôtel Le Soleil du Matin</h4>
-                        <p>Nuit à partir de 128<b>€</b><br><br><br><br><br></p>
-                        <div>
+                        <p>Nuit à partir de 128<b>€</b></p>
+                        <div class="etoiles_populaires">
                             <i class="fas fa-star text-blue"></i>
                             <i class="fas fa-star text-blue"></i>
                             <i class="fas fa-star text-blue"></i>
@@ -284,8 +284,8 @@
                     </div>
                     <div class="nom-hotel-populaires-pl-20 d-flex d-flex--column">
                         <h4 class="text-populaire">Au Coeur de l'eau,<br>Chambres d'Hôtes</h4>
-                        <p>Nuit à partir de <b>71 €</b><br><br><br><br><br></p>
-                        <div>
+                        <p>Nuit à partir de <b>71 €</b></p>
+                        <div class="etoiles_populaires">
                             <i class="fas fa-star text-blue"></i>
                             <i class="fas fa-star text-blue"></i>
                             <i class="fas fa-star text-blue"></i>
@@ -310,8 +310,8 @@
                     </div>
                     <div class="nom-hotel-populaires-pl-20 d-flex d-flex--column">
                         <h4>Hôtel Tout Bleu et Blanc</h4>
-                        <p>Nuit à partir de <b>68 €</b><br><br><br><br><br></p>
-                        <div>
+                        <p>Nuit à partir de <b>68 €</b></p>
+                        <div class="etoiles_populaires">
                             <i class="fas fa-star text-blue"></i>
                             <i class="fas fa-star text-blue"></i>
                             <i class="fas fa-star text-blue"></i>
@@ -336,7 +336,9 @@
     <!-- Section " Activités à Marseille"  -->
 
     <section id="activites" class="padding-section">
-        <h2 class="text-bold pl-15">Activités à Marseille</h2>
+        <div class="activites__title">
+            <h2 class="text-bold pl-15">Activités à Marseille</h2>
+        </div>
         <div class="activites-content">
             <a href="#" class="activites-solo">
                 <div>

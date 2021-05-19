@@ -1,7 +1,5 @@
-/* Feuille de Style CSS pour Projet P2 Reservia PSa 2021_04  */
-
-
-/* ========================================================= */
+/* Feuille de Style CSS pour Projet P2 Reservia Pascal Soula 2021_04-05 
+/* ==================================================================== */
 
 
 /* Reset CSS
@@ -344,7 +342,6 @@ h5 {
 .navigation-right {
     display: flex;
     margin-right: 25px;
-    /* border : 3px solid transparent; */
 }
 
 .banner .heberg_activ a {
@@ -361,11 +358,11 @@ h5 {
 .banner a:hover {
     color: #0065FC;
     border-top: solid 3px #0065FC;
-    padding: 25px 0 0 0;
+    padding: 50px 0 0 0;
 }
 
 
-/* on définit la classe active comme le hover  */
+/* définition de la classe active comme le hover  */
 
 .active {
     color: #0065FC;
@@ -577,7 +574,7 @@ button.filters__btn:hover {
 }
 
 .container__marseille h2 {
-    margin-left: 20px;
+    margin-left: 30px;
     padding-top: 20px;
 }
 
@@ -610,8 +607,12 @@ button.filters__btn:hover {
     margin: 15px 0 5px 0;
 }
 
+.etoiles_hebergements {
+    padding: 10px 0 10px 0;
+}
+
 .afficherplus h3 {
-    margin: 45px 0 0 20px;
+    margin: 40px 0 0 30px;
     font-weight: bold;
 }
 
@@ -638,7 +639,6 @@ button.filters__btn:hover {
 
 .text-populaire {
     text-align: left;
-    /*padding-left: 1em;*/
 }
 
 #populaires {
@@ -703,6 +703,10 @@ button.filters__btn:hover {
 
 .name__hotel h3 {
     margin-top: 10px;
+}
+
+.etoiles_populaires {
+    padding: 50px 0 10px 0;
 }
 
 
@@ -805,10 +809,11 @@ footer ul li {
 /* ============= */
 
 
-/* Smartphones */
+/* Smartphones 
+/* =========== */
 
 @media (min-width: 300px) and (max-width: 767px) {
-    /*   Ecrire dans ce bloc les propriétés CSS Mobile .monCss {...} */
+    /*   Ecrire dans ce bloc les propriétés CSS Mobile pour Smartphone */
     body {
         margin-left: auto;
         margin-right: auto;
@@ -816,14 +821,15 @@ footer ul li {
         padding-right: 5px;
         max-width: 767px;
     }
-    .logo-reservia {
-        display: block;
-    }
-    .logo-reservia {
+    #logo-reservia {
         padding: 10px 0px 0px 20px;
+        position: absolute;
+        top: -7%;
+        left: 0%;
     }
     .banner {
         padding: 0px;
+        justify-content: center;
     }
     .header a {
         font-size: 1.3em;
@@ -846,12 +852,19 @@ footer ul li {
         display: flex;
         flex-direction: raw;
         top: 1em;
+        padding-left: 40px;
     }
     .subscribe {
         top: 1em;
         right: 1.5em;
         text-align: right;
         padding-right: 25px;
+    }
+    .banner a:hover {
+        color: #0065FC;
+        border-top: 0;
+        border-bottom: solid 3px #0065FC;
+        padding: 0 0 10px 0;
     }
     nav {
         width: auto;
@@ -860,9 +873,18 @@ footer ul li {
     }
     nav a {
         font-size: 1.1em;
+        line-height: 60px!important;
+        margin-top: 20px;
     }
     nav a:hover {
         border-bottom: 0;
+    }
+    #searchbar-filters {
+        padding: 0 25px;
+        margin-top: 30px;
+    }
+    .searchbar-filters {
+        display: block;
     }
     .searchbar__title {
         font-size: 1.5rem;
@@ -873,8 +895,9 @@ footer ul li {
         font-size: 1rem;
         margin-bottom: 30px;
     }
-    .searchbar-filters {
-        display: block;
+    .searchbar__form {
+        margin: 35px 0;
+        width: 340px;
     }
     /* Populaires */
     #populaires {
@@ -901,7 +924,10 @@ footer ul li {
     } ?????????? */
     .populaires__title h2 {
         font-size: 18px;
-        padding-left: 15px;
+        padding-left: 5px;
+    }
+    .etoiles_populaires {
+        padding: 30px 0 10px 0;
     }
     #populaires .container_populaires {
         flex-direction: column;
@@ -919,7 +945,6 @@ footer ul li {
         flex-direction: column-reverse;
         justify-content: center;
         height: auto;
-        /**/
         gap: 0 1.25%;
     }
     .container__marseille {
@@ -927,14 +952,33 @@ footer ul li {
         margin-left: 10px;
         margin-right: 10px;
         height: 800px;
-        background-color: #f2f2f2;
+        background-color: #FFFFFF;
+        /* background-color: #f2f2f2; Pas de fond gris en responsive */
         border-radius: 20px;
+    }
+    .container__marseille h2 {
+        margin-left: 20px;
+        padding: 30px 0 20px 0;
     }
     .hotel__marseille {
         /* display: grid; equivalent à display + flex-direction */
         display: flex;
         flex-direction: column;
         width: 100%;
+        padding: 0 5px 0 5px;
+    }
+    .images__hotel {
+        flex: 27%;
+        background-color: white;
+        box-shadow: 5px 3px 3px lightgrey;
+        margin: 5px;
+        border-radius: 20px;
+    }
+    .images__hotel img {
+        width: 97%;
+        height: 200px;
+        border-radius: 20px 20px 0 0;
+        padding: 8px 8px 5px 8px;
     }
     /* Activités */
     #activites {
@@ -942,7 +986,6 @@ footer ul li {
         flex-direction: column;
         height: auto;
         justify-content: center;
-        align-items: center;
         /* justify-content: flex-end;*/
     }
     .activites {
@@ -953,6 +996,10 @@ footer ul li {
     }
     .activites h2 {
         padding-left: 2em;
+    }
+    .activites__title h2 {
+        font-size: 20px;
+        padding: 10px 0 30px 5px;
     }
     .activites-content {
         display: flex;
@@ -1031,7 +1078,11 @@ footer ul li {
 }
 
 
-/* Tablettes */
+/* Tablettes 
+/* ========= */
+
+
+/*   Ecrire dans ce bloc les propriétés CSS Mobile pour Tablettes */
 
 @media (min-width: 768px) and (max-width: 1024px) {
     main,
@@ -1054,7 +1105,6 @@ footer ul li {
         flex-direction: column;
         justify-content: center;
         border-radius: 0px;
-        /*width: 100%;*/
         width: Auto;
         margin: 0px;
         height: auto;
@@ -1065,11 +1115,10 @@ footer ul li {
         flex-direction: column-reverse;
         justify-content: center;
         height: auto;
-        /**/
         gap: 0 1.25%;
     }
     .afficherplus h3 {
-        margin: 75px 0 50px 25px;
+        margin: 50px 0 40px 25px;
         font-weight: bold;
     }
     /* Activités */
@@ -1077,6 +1126,57 @@ footer ul li {
         height: 500px;
         display: flex;
         flex-direction: column;
+    }
+    .activites-content {
+        display: flex;
+        height: 100%;
+    }
+    .activites-solo {
+        width: 25%;
+        margin: 15px 15px 15px 15px;
+        box-shadow: 5px 3px 3px lightgrey;
+        border-radius: 15px 15px 15px 15px;
+    }
+    .activites-solo img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+        box-shadow: 5px 5px 5px #f2f2f2
+    }
+    .activites-duo {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        height: 650px;
+        margin: 15px 15px 15px 15px;
+    }
+    .activites-duo-top {
+        width: 100%;
+        height: 215px;
+        box-shadow: 5px 3px 3px lightgrey;
+        border-radius: 15px 15px 15px 15px;
+        margin: 0 0 20px 0;
+    }
+    .activites-duo-top img {
+        width: 100%;
+        height: 165px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+    .activites-duo-bottom {
+        width: 100%;
+        height: 215px;
+        box-shadow: 5px 3px 3px lightgrey;
+        /* box-shadow: 5px 3px 3px #f2f2f2; gris plus léger */
+        border-radius: 15px 15px 15px 15px;
+        margin: 20px 0 0 0;
+    }
+    .activites-duo-bottom img {
+        width: 100%;
+        height: 165px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
     }
     /* Footer Tablette */
     footer {
