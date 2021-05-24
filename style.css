@@ -1,4 +1,14 @@
-/* Feuille de Style CSS pour Projet P2 Reservia Pascal Soula 2021_04-05 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+/*  --------- Polices -------- */
+
+
+/* ====================================================================
+/* Feuille de Style CSS pour Projet P2 Reservia Pascal Soula 2021_04-05
 /* ==================================================================== */
 
 
@@ -149,14 +159,6 @@ table {
 /*   Début style page CSS PSa   
 /* ============================ */
 
-
-/*  --------- Polices -------- */
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
 /*   Caractéristiques Page Web  */
 
@@ -850,7 +852,7 @@ footer ul li {
     }
     .heberg_activ {
         display: flex;
-        flex-direction: raw;
+        flex-direction: row;
         top: 1em;
         padding-left: 40px;
     }
@@ -1039,7 +1041,8 @@ footer ul li {
     }
     .activites-duo-top img {
         width: 100%;
-        height: 250 px/*auto;*/
+        height: 250px;
+        /*auto;*/
         object-fit: cover;
         border-radius: 15px 15px 0 0;
     }
@@ -1056,7 +1059,8 @@ footer ul li {
         object-fit: cover;
         border-radius: 15px 15px 0 0;
     }
-    /* Footer */
+    /* Footer 
+    /* ====== */
     footer {
         display: flex;
         flex-direction: column;
@@ -1064,7 +1068,6 @@ footer ul li {
         justify-content: center;
         height: auto;
     }
-    /**/
     .footer_content_colonne {
         padding: 15px 0 15px 0;
     }
