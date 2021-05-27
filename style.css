@@ -173,8 +173,8 @@ body {
 }
 
 
-/* Mise en forme du texte et images
-/* ================================ */
+/* Mise en forme du texte et des images
+/* ==================================== */
 
 .text-bold {
     font-weight: bold;
@@ -205,6 +205,9 @@ h1 {
     font-size: 16px;
     font-weight: 700;
 }
+
+
+/* Correction problèmes d'affichage sous Firefox */
 
 @-moz-document url-prefix() {
     h1 {
@@ -921,9 +924,6 @@ footer ul li {
         border-radius: 20px 0 0 20px;
         padding: 8px 0 8px 8px;
     }
-    /*.nom-hotel-populaires-pl-20 {
-        padding: 20px 0 0 10px;
-    } ?????????? */
     .populaires__title h2 {
         font-size: 18px;
         padding-left: 5px;
@@ -1083,9 +1083,6 @@ footer ul li {
 
 /* Tablettes 
 /* ========= */
-
-
-/*   Ecrire dans ce bloc les propriétés CSS Mobile pour Tablettes */
 
 @media (min-width: 768px) and (max-width: 1024px) {
     main,
